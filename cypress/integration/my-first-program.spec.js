@@ -23,7 +23,7 @@ describe('my first test', () => {
         const newItem = 'Adding third item'
 
         cy.get('[data-test=new-todo]').type(`${newItem}{enter}`)
-        cy.get('.todo-list li').should('have.length', 2).last().should('have.text', newItem)
+        cy.get('.todo-list li').should('have.length', 3).last().should('have.text', newItem)
     })
     //test 3
     it('Check on radio button of items', () => {
