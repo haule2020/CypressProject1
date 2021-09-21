@@ -8,7 +8,7 @@
     "delete:reports2": "if not exist cypress\\reports mkdir cypress\\reports",
     "cypress": "cypress open",
     "pretest": "npm run delete:reports",
-    "scripts": "cypress run",
+    "scripts": "cypress run --record --key dd470116-bed0-4172-8a68-86f73d8f4fc5",
     "test": "npm run scripts"
   },
   "keywords": [
