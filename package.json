@@ -8,9 +8,11 @@
     "delete:reports2": "if not exist cypress\\reports mkdir cypress\\reports",
     "cypress": "cypress open",
     "pretest": "npm run delete:reports",
-    "scripts": "cypress run --browser chrome --record --key dd470116-bed0-4172-8a68-86f73d8f4fc5 ",
-    "test": "node_modules\\.bin\\cypress run",
-    "runtest": "npm run test"
+    "scripts": "cypress run",
+    "cy:run:chrome": "cypress run --browser chrome",
+    "cy:run:firefox": "cypress run --browser firefox",
+    "cy:run:electron": "cypress run --browser electron",
+    "cy:run:dashboard": "cypress run --browser chrome --record --key dd470116-bed0-4172-8a68-86f73d8f4fc5"
   },
   "keywords": [
     "cypress",
@@ -21,7 +23,7 @@
   "author": "haule",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^8.4.0",
+    "cypress": "^8.4.1",
     "cypress-mochawesome-reporter": "^2.2.1",
     "cypress-multi-reporters": "^1.5.0",
     "cypress-xpath": "^1.6.2",
